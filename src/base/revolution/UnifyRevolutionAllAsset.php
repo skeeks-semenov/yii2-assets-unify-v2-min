@@ -16,8 +16,8 @@ use skeeks\assets\unify\base\revolution\UnifyRevolutionMigrationAsset;
 use skeeks\assets\unify\base\revolution\UnifyRevolutionNavigationAsset;
 use skeeks\assets\unify\base\revolution\UnifyRevolutionParallaxAsset;
 use skeeks\assets\unify\base\revolution\UnifyRevolutionSlideanimsAsset;
+use skeeks\assets\unify\base\UnifyAsset;
 use skeeks\assets\unify\base\UnifyRevolutionAsset;
-use skeeks\template\unify\UnifyAsset;
 use yii\web\YiiAsset;
 /**
  *
