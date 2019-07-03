@@ -8,6 +8,7 @@
 
 namespace skeeks\assets\unify\base;
 
+use yii\web\JqueryAsset;
 /**
  * @author Semenov Alexander <semenov@skeeks.com>
  */
@@ -20,5 +21,6 @@ class UnifyHsCoreAsset extends UnifyAsset
     ];
 
     public $depends = [
+        JqueryAsset::class
     ];
 }
