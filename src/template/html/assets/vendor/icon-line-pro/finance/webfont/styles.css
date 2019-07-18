@@ -2,6 +2,7 @@
 
 @font-face {
   font-family: "finance";
+    font-display: swap;
   src:url("fonts/finance.eot");
   src:url("fonts/finance.eot?#iefix") format("embedded-opentype"),
     url("fonts/finance.woff") format("woff"),

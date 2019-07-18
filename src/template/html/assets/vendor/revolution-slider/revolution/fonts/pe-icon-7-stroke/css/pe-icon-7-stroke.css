@@ -1,5 +1,6 @@
 @font-face {
 	font-family: 'Pe-icon-7-stroke';
+    font-display: swap;
 	src:url('../fonts/Pe-icon-7-stroke.eot?d7yf1v');
 	src:url('../fonts/Pe-icon-7-stroke.eot?#iefixd7yf1v') format('embedded-opentype'),
 		url('../fonts/Pe-icon-7-stroke.woff?d7yf1v') format('woff'),

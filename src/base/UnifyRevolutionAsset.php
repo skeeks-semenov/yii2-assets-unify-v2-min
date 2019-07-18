@@ -30,4 +30,24 @@ class UnifyRevolutionAsset extends UnifyAsset
     public $depends = [
         YiiAsset::class
     ];
+
+    public function registerAssetFiles($view)
+    {
+        parent::registerAssetFiles($view);
+
+        $appendTimestamp = \Yii::$app->assetManager->appendTimestamp;
+        \Yii::$app->assetManager->appendTimestamp = false;
+
+        $href = self::getAssetUrl('assets/vendor/revolution-slider/revolution/fonts/revicons/revicons.woff');
+        \Yii::$app->view->registerLinkTag([
+            'rel' => 'preload', 'href' => $href, 'as' => 'font', 'type' => 'font/woff', 'crossorigin' => 'crossorigin'
+        ]);
+        $href = self::getAssetUrl('assets/vendor/revolution-slider/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.woff');
+        \Yii::$app->view->registerLinkTag([
+            'rel' => 'preload', 'href' => $href, 'as' => 'font', 'type' => 'font/woff', 'crossorigin' => 'crossorigin'
+        ]);
+
+        \Yii::$app->assetManager->appendTimestamp = $appendTimestamp;
+    }
+    
 }

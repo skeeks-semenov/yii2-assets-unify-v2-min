@@ -2420,6 +2420,7 @@
 /* Finance */
 @font-face {
 	font-family: "finance";
+    font-display: swap;
 	src:url("finance/webfont/fonts/finance.eot");
 	src:url("finance/webfont/fonts/finance.eot?#iefix") format("embedded-opentype"),
 	url("finance/webfont/fonts/finance.woff") format("woff"),
