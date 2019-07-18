@@ -2,6 +2,7 @@
 
 @font-face {
   font-family: "media";
+    font-display: swap;
   src:url("fonts/media.eot");
   src:url("fonts/media.eot?#iefix") format("embedded-opentype"),
     url("fonts/media.woff") format("woff"),

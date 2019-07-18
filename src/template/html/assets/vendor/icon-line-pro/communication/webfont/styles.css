@@ -2,6 +2,7 @@
 
 @font-face {
   font-family: "communication-48-x-48";
+    font-display: swap;
   src:url("fonts/communication-48-x-48.eot");
   src:url("fonts/communication-48-x-48.eot?#iefix") format("embedded-opentype"),
     url("fonts/communication-48-x-48.woff") format("woff"),
