@@ -38,7 +38,7 @@ class UnifyRevolutionAsset extends UnifyAsset
         $appendTimestamp = \Yii::$app->assetManager->appendTimestamp;
         \Yii::$app->assetManager->appendTimestamp = false;
 
-        $href = self::getAssetUrl('assets/vendor/revolution-slider/revolution/fonts/revicons/revicons.woff');
+        $href = self::getAssetUrl('assets/vendor/revolution-slider/revolution/fonts/revicons/revicons.woff?5510888');
         \Yii::$app->view->registerLinkTag([
             'rel' => 'preload', 'href' => $href, 'as' => 'font', 'type' => 'font/woff', 'crossorigin' => 'crossorigin'
         ]);
