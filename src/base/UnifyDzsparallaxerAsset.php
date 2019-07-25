@@ -17,6 +17,9 @@ use yii\web\YiiAsset;
 class UnifyDzsparallaxerAsset extends UnifyAsset
 {
     public $css = [
+        'assets/vendor/dzsparallaxer/dzsparallaxer.css',
+        'assets/vendor/dzsparallaxer/dzsscroller/scroller.css',
+        'assets/vendor/dzsparallaxer/advancedscroller/plugin.css'
     ];
 
     public $js = [
