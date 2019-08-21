@@ -21,6 +21,7 @@ class UnifyHsChartAsset extends UnifyAsset
     ];
 
     public $depends = [
-        UnifyHsCoreAsset::class
+        UnifyHsCoreAsset::class,
+        UnifyAppearAsset::class
     ];
 }
