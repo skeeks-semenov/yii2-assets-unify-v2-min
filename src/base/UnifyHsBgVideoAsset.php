@@ -15,6 +15,7 @@ namespace skeeks\assets\unify\base;
 class UnifyHsBgVideoAsset extends UnifyAsset
 {
     public $css = [
+        'assets/vendor/hs-bg-video/hs-bg-video.css'
     ];
 
     public $js = [
