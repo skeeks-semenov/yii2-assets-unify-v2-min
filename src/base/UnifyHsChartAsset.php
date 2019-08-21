@@ -9,19 +9,14 @@
 namespace skeeks\assets\unify\base;
 
 /**
- *
  * @author Semenov Alexander <semenov@skeeks.com>
  */
-class UnifyHsBgVideoAsset extends UnifyAsset
+class UnifyHsChartAsset extends UnifyAsset
 {
-    public $css = [
-        'assets/vendor/hs-bg-video/hs-bg-video.css'
-    ];
 
     public $js = [
-        'assets/vendor/hs-bg-video/hs-bg-video.js',
-        'assets/vendor/hs-bg-video/vendor/player.min.js',
-        'assets/js/helpers/hs.bg-video.js',
+        'assets/vendor/circles/circles.min.js',
+        'assets/js/components/hs.chart-pie.js'
     ];
 
     public $depends = [
