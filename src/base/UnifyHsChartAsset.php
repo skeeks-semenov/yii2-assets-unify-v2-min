@@ -16,6 +16,7 @@ class UnifyHsChartAsset extends UnifyAsset
 
     public $js = [
         'assets/vendor/circles/circles.min.js',
+        'assets/vendor/appear.js',
         'assets/js/components/hs.chart-pie.js'
     ];
 
