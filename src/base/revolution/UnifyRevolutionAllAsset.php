@@ -40,6 +40,7 @@ class UnifyRevolutionAllAsset extends UnifyAsset
         UnifyRevolutionMigrationAsset::class,
         UnifyRevolutionNavigationAsset::class,
         UnifyRevolutionParallaxAsset::class,
-        UnifyRevolutionSlideanimsAsset::class
+        UnifyRevolutionSlideanimsAsset::class,
+        UnifyRevolutionVideoAsset::class
     ];
 }
