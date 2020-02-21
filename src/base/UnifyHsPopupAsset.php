@@ -8,6 +8,7 @@
 
 namespace skeeks\assets\unify\base;
 
+use skeeks\cms\assets\FancyboxAssets;
 /**
  *
  * @author Semenov Alexander <semenov@skeeks.com>
@@ -24,5 +25,6 @@ class UnifyHsPopupAsset extends UnifyAsset
     public $depends = [
         UnifyHsCoreAsset::class,
         UnifyFancyboxAsset::class,
+        //FancyboxAssets::class,
     ];
 }
