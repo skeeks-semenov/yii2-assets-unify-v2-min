@@ -15,6 +15,7 @@ namespace skeeks\assets\unify\base;
 class UnifyHsOnscrollAnimationAsset extends UnifyAsset
 {
     public $css = [
+        'assets/vendor/animate.css'
     ];
 
     public $js = [
