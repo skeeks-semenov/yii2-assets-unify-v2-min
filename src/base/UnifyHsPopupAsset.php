@@ -27,4 +27,23 @@ class UnifyHsPopupAsset extends UnifyAsset
         UnifyFancyboxAsset::class,
         //FancyboxAssets::class,
     ];
+
+    public function registerAssetFiles($view)
+    {
+        parent::registerAssetFiles($view);
+
+        \Yii::$app->view->registerJs(<<<JS
+$.HSCore.components.HSPopup.init('.js-fancybox-media', {
+    helpers: {
+        media: {},
+        overlay: {
+            css: {
+                'background': 'rgba(0, 0, 0, .8)'
+            }
+        }
+    }
+});
+JS
+        );
+    }
 }

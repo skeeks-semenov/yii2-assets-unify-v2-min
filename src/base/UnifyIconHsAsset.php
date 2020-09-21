@@ -13,10 +13,10 @@ use yii\web\YiiAsset;
 /**
  * @author Semenov Alexander <semenov@skeeks.com>
  */
-class UnifyIconSimpleLineAsset extends UnifyAsset
+class UnifyIconHsAsset extends UnifyAsset
 {
     public $css = [
-        'assets/vendor/icon-line/css/simple-line-icons.css',
+        'assets/vendor/icon-hs/style.css',
     ];
 
     public $js = [
@@ -32,15 +32,14 @@ class UnifyIconSimpleLineAsset extends UnifyAsset
         $appendTimestamp = \Yii::$app->assetManager->appendTimestamp;
         \Yii::$app->assetManager->appendTimestamp = false;
 
-        $href = self::getAssetUrl('assets/vendor/icon-line/fonts/Simple-Line-Icons.woff2?v=2.4.0');
+        $href = self::getAssetUrl('assets/vendor/icon-hs/fonts/hs-icons.ttf?xa77py');
         \Yii::$app->view->registerLinkTag([
             'rel'         => 'preload',
             'href'        => $href,
             'as'          => 'font',
-            'type'        => 'font/woff2',
+            'type'        => 'font/ttf',
             'crossorigin' => 'crossorigin',
         ]);
-      
 
         \Yii::$app->assetManager->appendTimestamp = $appendTimestamp;
     }
