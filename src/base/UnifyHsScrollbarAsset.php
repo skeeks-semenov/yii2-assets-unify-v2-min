@@ -28,4 +28,17 @@ class UnifyHsScrollbarAsset extends UnifyAsset
     public $depends = [
         UnifyHsCoreAsset::class
     ];
+
+    public function registerAssetFiles($view)
+    {
+        parent::registerAssetFiles($view);
+
+        $view->registerJs(<<<JS
+$(document).on('pjax:complete', function (e) {
+    $.HSCore.components.HSScrollBar.init($('.js-scrollbar'));
+});
+$.HSCore.components.HSScrollBar.init($('.js-scrollbar'));
+JS
+        );
+    }
 }

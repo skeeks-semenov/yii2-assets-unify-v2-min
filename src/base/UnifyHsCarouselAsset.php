@@ -14,7 +14,7 @@ namespace skeeks\assets\unify\base;
 class UnifyHsCarouselAsset extends UnifyAsset
 {
     public $css = [
-        'assets/vendor/slick-carousel/slick/slick.css'
+        'assets/vendor/slick-carousel/slick/slick.css',
     ];
 
     public $js = [
@@ -23,6 +23,26 @@ class UnifyHsCarouselAsset extends UnifyAsset
     ];
 
     public $depends = [
-        UnifyHsCoreAsset::class
+        UnifyHsCoreAsset::class,
     ];
+
+    public function registerAssetFiles($view)
+    {
+        parent::registerAssetFiles($view);
+
+        $view->registerCss(<<<CSS
+.slick-slide:focus {
+  outline: 0 none;
+}
+CSS
+        );
+
+        $view->registerJs(<<<JS
+$(document).on('pjax:complete', function (e) {
+    $.HSCore.components.HSCarousel.init('.js-carousel');
+});
+$.HSCore.components.HSCarousel.init('.js-carousel');
+JS
+        );
+    }
 }
