@@ -26,4 +26,29 @@ class UnifyHsOnscrollAnimationAsset extends UnifyAsset
         UnifyHsCoreAsset::class,
         UnifyAppearAsset::class
     ];
+
+    public function registerAssetFiles($view)
+    {
+        parent::registerAssetFiles($view);
+
+        $view->registerCss(<<<CSS
+
+/*------------------------------------
+  Animation on the scroll
+------------------------------------*/
+[data-animation]:not(.u-in-viewport) {
+  visibility: hidden;
+}
+
+[data-animation].js-carousel {
+  visibility: visible;
+}
+
+.u-in-viewport {
+  visibility: visible;
+}
+
+CSS
+        );
+    }
 }
