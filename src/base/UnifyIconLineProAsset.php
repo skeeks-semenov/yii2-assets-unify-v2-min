@@ -40,7 +40,25 @@ class UnifyIconLineProAsset extends UnifyAsset
             'type'        => 'font/woff2',
             'crossorigin' => 'crossorigin',
         ]);
-      
+
+        $href = self::getAssetUrl('assets/vendor/icon-line-pro/education/webfont/fonts/education-48.woff');
+        \Yii::$app->view->registerLinkTag([
+            'rel'         => 'preload',
+            'href'        => $href,
+            'as'          => 'font',
+            'type'        => 'font/woff2',
+            'crossorigin' => 'crossorigin',
+        ]);
+        
+        $href = self::getAssetUrl('assets/vendor/icon-line-pro/transport/webfont/fonts/transport.woff');
+        \Yii::$app->view->registerLinkTag([
+            'rel'         => 'preload',
+            'href'        => $href,
+            'as'          => 'font',
+            'type'        => 'font/woff2',
+            'crossorigin' => 'crossorigin',
+        ]);
+
 
         \Yii::$app->assetManager->appendTimestamp = $appendTimestamp;
     }
