@@ -22,6 +22,7 @@ class UnifyIconHsAsset extends UnifyAsset
     public $js = [
     ];
 
+
     public $depends = [
     ];
     
