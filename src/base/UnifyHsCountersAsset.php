@@ -19,6 +19,7 @@ class UnifyHsCountersAsset extends UnifyAsset
     ];
 
     public $depends = [
-        UnifyHsCoreAsset::class
+        UnifyHsCoreAsset::class,
+        UnifyAppearAsset::class
     ];
 }
