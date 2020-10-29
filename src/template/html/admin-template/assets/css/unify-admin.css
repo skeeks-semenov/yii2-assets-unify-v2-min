@@ -21412,8 +21412,10 @@ video {
 }
 
 .navbar .u-main-nav-v1 .nav-item.hs-has-sub-menu > a::after, .navbar .u-main-nav-v1 .nav-item.hs-has-mega-menu > a::after, .navbar .u-main-nav-v1 .nav-item.dropdown > a::after, .navbar .u-main-nav-v2 .nav-item.hs-has-sub-menu > a::after, .navbar .u-main-nav-v2 .nav-item.hs-has-mega-menu > a::after, .navbar .u-main-nav-v2 .nav-item.dropdown > a::after, .navbar .u-main-nav-v3 .nav-item.hs-has-sub-menu > a::after, .navbar .u-main-nav-v3 .nav-item.hs-has-mega-menu > a::after, .navbar .u-main-nav-v3 .nav-item.dropdown > a::after, .navbar .u-main-nav-v4 .nav-item.hs-has-sub-menu > a::after, .navbar .u-main-nav-v4 .nav-item.hs-has-mega-menu > a::after, .navbar .u-main-nav-v4 .nav-item.dropdown > a::after, .navbar .u-main-nav-v5 .nav-item.hs-has-sub-menu > a::after, .navbar .u-main-nav-v5 .nav-item.hs-has-mega-menu > a::after, .navbar .u-main-nav-v5 .nav-item.dropdown > a::after, .navbar .u-main-nav-v6 .nav-item.hs-has-sub-menu > a::after, .navbar .u-main-nav-v6 .nav-item.hs-has-mega-menu > a::after, .navbar .u-main-nav-v6 .nav-item.dropdown > a::after, .navbar .u-main-nav-v7 .nav-item.hs-has-sub-menu > a::after, .navbar .u-main-nav-v7 .nav-item.hs-has-mega-menu > a::after, .navbar .u-main-nav-v7 .nav-item.dropdown > a::after, .navbar .u-main-nav-v8 .nav-item.hs-has-sub-menu > a::after, .navbar .u-main-nav-v8 .nav-item.hs-has-mega-menu > a::after, .navbar .u-main-nav-v8 .nav-item.dropdown > a::after, .navbar .u-main-nav-v9 .nav-item.hs-has-sub-menu > a::after, .navbar .u-main-nav-v9 .nav-item.hs-has-mega-menu > a::after {
-  content: "\e900";
-  font-family: "hs-icons";
+  /*content: "\e900";*/
+  content: "\e90d";
+font-family: 'hs-admin-icons' !important;
+  /*font-family: "hs-icons";*/
   font-weight: inherit;
   line-height: 1;
   position: absolute;
@@ -23123,7 +23125,8 @@ body.u-main-nav--push-left.u-main-nav--overlay-opened .u-main-nav__overlay {
 body.u-body--header-side-static-left .navbar [class*="u-main-nav-"] .dropdown-toggle::after,
 body.u-body--header-side-static-left .navbar [class*="u-main-nav-"] > .hs-has-sub-menu > a::after,
 body.u-body--header-side-static-left .navbar [class*="u-main-nav-"] > .hs-has-mega-menu > a::after {
-  content: "\e900";
+    content: "\e90d";
+font-family: 'hs-admin-icons' !important;
 }
 
 body.u-body--header-side-static-right .navbar [class*="u-main-nav-"] .dropdown-toggle::after,
@@ -27386,10 +27389,11 @@ img.u-block-hover__main--magnifier-top-left {
 }
 
 .dropdown-toggle::after {
-  content: "\e900";
+  content: "\e90d";
+font-family: 'hs-admin-icons' !important;
   position: relative;
   top: 0.21429rem;
-  font-family: "hs-icons" !important;
+  /*font-family: "hs-icons" !important;*/
   font-size: 10px;
   display: inline;
   border: none;
