@@ -133,12 +133,1534 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
 }
 
+/*------------------------------------
+  Arrows
+------------------------------------*/
+.u-arrow-v1::before {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  vertical-align: top;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.u-arrow-v1[class*="abs"]::before {
+  position: absolute;
+}
+
+.u-arrow-custom-v1 .u-arrow-icon {
+  display: block;
+}
+
+.u-arrow-custom-v1 .u-arrow-text {
+  position: absolute;
+  top: 50%;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.u-arrow-custom-v1.js-prev .u-arrow-text {
+  -webkit-transform: translateY(-50%) translateX(-100%);
+      -ms-transform: translateY(-50%) translateX(-100%);
+          transform: translateY(-50%) translateX(-100%);
+}
+
+.u-arrow-custom-v1.js-next .u-arrow-text {
+  -webkit-transform: translateY(-50%) translateX(100%);
+      -ms-transform: translateY(-50%) translateX(100%);
+          transform: translateY(-50%) translateX(100%);
+}
+
+.u-arrow-custom-v1:hover .u-arrow-text {
+  -webkit-transform: translateY(-50%) translateX(0);
+      -ms-transform: translateY(-50%) translateX(0);
+          transform: translateY(-50%) translateX(0);
+}
+
+.u-arrow-custom-v2 {
+  overflow: hidden;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.u-arrow-custom-v2 .u-arrow-icon {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.u-arrow-custom-v2 .u-arrow-img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+
+.u-arrow-custom-v2.js-prev .u-arrow-icon {
+  -webkit-transform: translateY(-50%) translateX(10px);
+      -ms-transform: translateY(-50%) translateX(10px);
+          transform: translateY(-50%) translateX(10px);
+}
+
+.u-arrow-custom-v2.js-prev .u-arrow-img {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.u-arrow-custom-v2.js-next .u-arrow-icon {
+  -webkit-transform: translateY(-50%) translateX(-10px);
+      -ms-transform: translateY(-50%) translateX(-10px);
+          transform: translateY(-50%) translateX(-10px);
+}
+
+.u-arrow-custom-v2.js-next .u-arrow-img {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.u-arrow-custom-v2:hover .u-arrow-icon {
+  -webkit-transform: translateY(-50%) translateX(0);
+      -ms-transform: translateY(-50%) translateX(0);
+          transform: translateY(-50%) translateX(0);
+}
+
+.u-arrow-custom-v2:hover .u-arrow-img {
+  opacity: .6;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.u-arrow-custom-v3 .u-arrow-helper {
+  content: "";
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.u-arrow-custom-v3 .u-arrow-icon {
+  display: block;
+}
+
+.u-arrow-custom-v3 .u-arrow-icon-before, .u-arrow-custom-v3 .u-arrow-icon-after {
+  position: absolute;
+  left: 25%;
+  -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+  transition: background-color 0.3s, -webkit-transform 0.3s;
+  -o-transition: transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.u-arrow-custom-v3 .u-arrow-icon-before {
+  -webkit-transform: translateX(-50%) rotate(30deg);
+      -ms-transform: translateX(-50%) rotate(30deg);
+          transform: translateX(-50%) rotate(30deg);
+  -webkit-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+.u-arrow-custom-v3 .u-arrow-icon-after {
+  top: 50%;
+  -webkit-transform: translateX(-50%) rotate(-30deg);
+      -ms-transform: translateX(-50%) rotate(-30deg);
+          transform: translateX(-50%) rotate(-30deg);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.u-arrow-custom-v3.js-next .u-arrow-icon {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.u-arrow-custom-v3:hover .u-arrow-helper {
+  background-color: #fff;
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.u-arrow-custom-v3:hover .u-arrow-icon-before, .u-arrow-custom-v3:hover .u-arrow-icon-after {
+  background-color: #e62154;
+}
+
+.u-arrow-custom-v3:hover .u-arrow-icon-before {
+  -webkit-transform: translateX(-50%) rotate(45deg);
+      -ms-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+}
+
+.u-arrow-custom-v3:hover .u-arrow-icon-after {
+  -webkit-transform: translateX(-50%) rotate(-45deg);
+      -ms-transform: translateX(-50%) rotate(-45deg);
+          transform: translateX(-50%) rotate(-45deg);
+}
+
+.u-arrow-custom-v4 {
+  width: 62px;
+  height: 62px;
+  -webkit-transition: width 0.3s, background-color 0.3s;
+  -o-transition: width 0.3s, background-color 0.3s;
+  transition: width 0.3s, background-color 0.3s;
+}
+
+.u-arrow-custom-v4 h4 {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+
+.u-arrow-custom-v4.js-prev h4 {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.u-arrow-custom-v4.js-next h4 {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.u-arrow-custom-v4:hover {
+  width: 200px;
+}
+
+.u-arrow-custom-v4:hover .u-arrow-icon {
+  color: #e62154;
+}
+
+.u-arrow-custom-v4:hover h4 {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.u-arrow-custom-v5 .u-arrow-icon::before {
+  -webkit-transition: -webkit-transform .3s .3s;
+  transition: -webkit-transform .3s .3s;
+  -o-transition: transform .3s .3s;
+  transition: transform .3s .3s;
+  transition: transform .3s .3s, -webkit-transform .3s .3s;
+}
+
+.u-arrow-custom-v5 .u-arrow-text {
+  -webkit-transition: -webkit-transform .3s .3s;
+  transition: -webkit-transform .3s .3s;
+  -o-transition: transform .3s .3s;
+  transition: transform .3s .3s;
+  transition: transform .3s .3s, -webkit-transform .3s .3s;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.u-arrow-custom-v5 .u-arrow-title {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 30%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+  margin: 0;
+}
+
+.u-arrow-custom-v5 .u-arrow-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.u-arrow-custom-v5.js-prev .u-arrow-text {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.u-arrow-custom-v5.js-next .u-arrow-text {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.u-arrow-custom-v5:hover .u-arrow-text {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.u-arrow-custom-v5:hover .u-arrow-title {
+  -webkit-transition-delay: .6s;
+       -o-transition-delay: .6s;
+          transition-delay: .6s;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+.u-arrow-custom-v5:hover .u-arrow-icon::before {
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.u-arrow-custom-v5:hover.js-prev .u-arrow-icon::before {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.u-arrow-custom-v5:hover.js-next .u-arrow-icon::before {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.u-arrow-custom-v6 {
+  overflow: hidden;
+  width: 40px;
+  -webkit-transition: width .4s, background-color .4s, z-index .4s;
+  -o-transition: width .4s, background-color .4s, z-index .4s;
+  transition: width .4s, background-color .4s, z-index .4s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+       -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+          transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.u-arrow-custom-v6 .u-arrow-text {
+  width: 400px;
+}
+
+.u-arrow-custom-v6:hover {
+  width: 400px;
+  z-index: 11;
+}
+
+.u-arrow-custom-v7 {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.u-arrow-custom-v7 .u-arrow-icon::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.u-arrow-custom-v7 .u-arrow-img {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.u-arrow-custom-v7.js-prev {
+  -webkit-perspective-origin: 100% 50%;
+          perspective-origin: 100% 50%;
+}
+
+.u-arrow-custom-v7.js-prev .u-arrow-img {
+  -webkit-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
+.u-arrow-custom-v7.js-next {
+  -webkit-perspective-origin: 0 50%;
+          perspective-origin: 0 50%;
+}
+
+.u-arrow-custom-v7.js-next .u-arrow-img {
+  -webkit-transform-origin: 100% 50%;
+      -ms-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-transform: rotateY(-90deg);
+          transform: rotateY(-90deg);
+}
+
+.u-arrow-custom-v7:hover .u-arrow-icon {
+  color: #e62154;
+}
+
+.u-arrow-custom-v7:hover .u-arrow-img {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.u-arrow-custom-v8 {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.u-arrow-custom-v8 .u-arrow-icon::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.u-arrow-custom-v8 .u-arrow-title,
+.u-arrow-custom-v8 .u-arrow-img {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.u-arrow-custom-v8 .u-arrow-title {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.u-arrow-custom-v8 .u-arrow-text {
+  -webkit-transition: -webkit-transform 0.3s 0.3s;
+  transition: -webkit-transform 0.3s 0.3s;
+  -o-transition: transform 0.3s 0.3s;
+  transition: transform 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.u-arrow-custom-v8.js-prev {
+  -webkit-perspective-origin: 100% 50%;
+          perspective-origin: 100% 50%;
+}
+
+.u-arrow-custom-v8.js-prev .u-arrow-text,
+.u-arrow-custom-v8.js-prev .u-arrow-title {
+  -webkit-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
+.u-arrow-custom-v8.js-next {
+  -webkit-perspective-origin: 0 50%;
+          perspective-origin: 0 50%;
+}
+
+.u-arrow-custom-v8.js-next .u-arrow-text,
+.u-arrow-custom-v8.js-next .u-arrow-title {
+  -webkit-transform-origin: 100% 50%;
+      -ms-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-transform: rotateY(-90deg);
+          transform: rotateY(-90deg);
+}
+
+.u-arrow-custom-v8:hover .u-arrow-icon {
+  color: #e62154;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.u-arrow-custom-v8:hover .u-arrow-icon::before {
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.u-arrow-custom-v8:hover .u-arrow-text,
+.u-arrow-custom-v8:hover .u-arrow-title {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.u-arrow-custom-v8:hover .u-arrow-text {
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.u-arrow-custom-v8:hover .u-arrow-title {
+  -webkit-transition-delay: .3s;
+       -o-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.u-arrow-custom-v9 {
+  width: 60px;
+}
+
+.u-arrow-custom-v9 .u-arrow-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 1px;
+  background: #fff;
+  -webkit-transition: width .3s .2s;
+  -o-transition: width .3s .2s;
+  transition: width .3s .2s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.u-arrow-custom-v9 .u-arrow-text::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  margin: 20px 5px 0;
+}
+
+.u-arrow-custom-v9 .u-arrow-img {
+  opacity: 0;
+  -webkit-box-shadow: 0 1px 0 #fff, 0 -1px 0 #fff;
+          box-shadow: 0 1px 0 #fff, 0 -1px 0 #fff;
+  -webkit-transition: opacity .3s, -webkit-transform .3s;
+  transition: opacity .3s, -webkit-transform .3s;
+  -o-transition: transform .3s, opacity .3s;
+  transition: transform .3s, opacity .3s;
+  transition: transform .3s, opacity .3s, -webkit-transform .3s;
+  -webkit-transform: scale(0.3);
+      -ms-transform: scale(0.3);
+          transform: scale(0.3);
+}
+
+.u-arrow-custom-v9.js-prev .u-arrow-icon::after {
+  left: calc(100% - 25px);
+}
+
+.u-arrow-custom-v9.js-next .u-arrow-icon::after {
+  right: calc(100% - 25px);
+}
+
+.u-arrow-custom-v9.js-next .u-arrow-text::after {
+  text-align: right;
+}
+
+.u-arrow-custom-v9:hover {
+  width: 200px;
+}
+
+.u-arrow-custom-v9:hover .u-arrow-icon::after {
+  width: 200px;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.u-arrow-custom-v9:hover .u-arrow-text {
+  pointer-events: auto;
+}
+
+.u-arrow-custom-v9:hover .u-arrow-text::after {
+  opacity: 1;
+  -webkit-transition-delay: .2s;
+       -o-transition-delay: .2s;
+          transition-delay: .2s;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.u-arrow-custom-v9:hover .u-arrow-img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.u-arrow-custom-v9:hover .u-arrow-img:first-child {
+  -webkit-transition-delay: 0.3s;
+       -o-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.u-arrow-custom-v9:hover .u-arrow-img:nth-child(2) {
+  -webkit-transition-delay: 0.35s;
+       -o-transition-delay: 0.35s;
+          transition-delay: 0.35s;
+}
+
+.u-arrow-custom-v9:hover .u-arrow-img:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+       -o-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.u-arrow-custom-v10 .u-arrow-text {
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-transition: opacity .3s, background-color .1s 0s, -webkit-transform .3s;
+  transition: opacity .3s, background-color .1s 0s, -webkit-transform .3s;
+  -o-transition: transform .3s, opacity .3s, background-color .1s 0s;
+  transition: transform .3s, opacity .3s, background-color .1s 0s;
+  transition: transform .3s, opacity .3s, background-color .1s 0s, -webkit-transform .3s;
+}
+
+.u-arrow-custom-v10 .u-arrow-img {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.u-arrow-custom-v10.js-prev .u-arrow-img {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.u-arrow-custom-v10.js-next .u-arrow-img {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.u-arrow-custom-v10:hover .u-arrow-text {
+  opacity: 1;
+  background-color: transparent;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity .3s, background-color .1s .2s, -webkit-transform .3s;
+  transition: opacity .3s, background-color .1s .2s, -webkit-transform .3s;
+  -o-transition: transform .3s, opacity .3s, background-color .1s .2s;
+  transition: transform .3s, opacity .3s, background-color .1s .2s;
+  transition: transform .3s, opacity .3s, background-color .1s .2s, -webkit-transform .3s;
+}
+
+.u-arrow-custom-v10:hover .u-arrow-img {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.u-arrow-custom-v11 .u-arrow-icon {
+  border-width: 0;
+  -webkit-transition: border-width .3s .15s;
+  -o-transition: border-width .3s .15s;
+  transition: border-width .3s .15s;
+}
+
+.u-arrow-custom-v11 .u-arrow-text {
+  opacity: 0;
+  -webkit-transition: opacity .3s, -webkit-transform .3s;
+  transition: opacity .3s, -webkit-transform .3s;
+  -o-transition: transform .3s, opacity .3s;
+  transition: transform .3s, opacity .3s;
+  transition: transform .3s, opacity .3s, -webkit-transform .3s;
+}
+
+.u-arrow-custom-v11.js-prev .u-arrow-text {
+  -webkit-transform: translateY(-50%) translateX(-100%) scale(0.75);
+      -ms-transform: translateY(-50%) translateX(-100%) scale(0.75);
+          transform: translateY(-50%) translateX(-100%) scale(0.75);
+}
+
+.u-arrow-custom-v11.js-next .u-arrow-text {
+  -webkit-transform: translateY(-50%) translateX(100%) scale(0.75);
+      -ms-transform: translateY(-50%) translateX(100%) scale(0.75);
+          transform: translateY(-50%) translateX(100%) scale(0.75);
+}
+
+.u-arrow-custom-v11:hover .u-arrow-icon {
+  border-top-width: 40px;
+  border-bottom-width: 40px;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.u-arrow-custom-v11:hover .u-arrow-text {
+  opacity: 1;
+  -webkit-transition-delay: .3s;
+       -o-transition-delay: .3s;
+          transition-delay: .3s;
+  -webkit-transform: translateY(-50%) translateX(0) scale(1);
+      -ms-transform: translateY(-50%) translateX(0) scale(1);
+          transform: translateY(-50%) translateX(0) scale(1);
+}
+
+.u-arrow-custom-v12 .u-arrow-icon {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.u-arrow-custom-v12 .u-arrow-icon::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.u-arrow-custom-v12 .u-arrow-text {
+  overflow: hidden;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+.u-arrow-custom-v12 .u-arrow-img {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: opacity .3s, -webkit-transform .3s;
+  transition: opacity .3s, -webkit-transform .3s;
+  -o-transition: opacity .3s, transform .3s;
+  transition: opacity .3s, transform .3s;
+  transition: opacity .3s, transform .3s, -webkit-transform .3s;
+}
+
+.u-arrow-custom-v12:hover .u-arrow-img {
+  opacity: .8;
+}
+
+.u-arrow-custom-v12.js-prev .u-arrow-img {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg) scale(2);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg) scale(2);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg) scale(2);
+}
+
+.u-arrow-custom-v12.js-prev:hover .u-arrow-text {
+  -webkit-transform: scale(1) rotate(-45deg);
+      -ms-transform: scale(1) rotate(-45deg);
+          transform: scale(1) rotate(-45deg);
+}
+
+.u-arrow-custom-v12.js-prev:hover .u-arrow-img {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg) scale(1);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg) scale(1);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg) scale(1);
+}
+
+.u-arrow-custom-v12.js-next .u-arrow-img {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg) scale(2);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg) scale(2);
+          transform: translateX(-50%) translateY(-50%) rotate(-45deg) scale(2);
+}
+
+.u-arrow-custom-v12.js-next:hover .u-arrow-text {
+  -webkit-transform: scale(1) rotate(45deg);
+      -ms-transform: scale(1) rotate(45deg);
+          transform: scale(1) rotate(45deg);
+}
+
+.u-arrow-custom-v12.js-next:hover .u-arrow-img {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg) scale(1);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg) scale(1);
+          transform: translateX(-50%) translateY(-50%) rotate(-45deg) scale(1);
+}
+
+.u-arrow-custom-v13 .u-arrow-icon {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.u-arrow-custom-v13 .u-arrow-icon::before {
+  position: relative;
+  z-index: 2;
+}
+
+.u-arrow-custom-v13 .u-arrow-icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background: #fff;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .3s .3s;
+  transition: -webkit-transform .3s .3s;
+  -o-transition: transform .3s .3s;
+  transition: transform .3s .3s;
+  transition: transform .3s .3s, -webkit-transform .3s .3s;
+}
+
+.u-arrow-custom-v13 .u-arrow-text {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.u-arrow-custom-v13.js-prev .u-arrow-icon::after {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.u-arrow-custom-v13.js-prev .u-arrow-text {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.u-arrow-custom-v13.js-next .u-arrow-icon::after {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.u-arrow-custom-v13.js-next .u-arrow-text {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.u-arrow-custom-v13:hover .u-arrow-icon::after {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.u-arrow-custom-v13:hover .u-arrow-text {
+  -webkit-transition-delay: .3s;
+       -o-transition-delay: .3s;
+          transition-delay: .3s;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.u-arrow-custom-v14::before, .u-arrow-custom-v14::after,
+.u-arrow-custom-v14 .u-arrow-icon::before,
+.u-arrow-custom-v14 .u-arrow-icon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 3px;
+  height: 50%;
+  background: #e62154;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.u-arrow-custom-v14::before,
+.u-arrow-custom-v14 .u-arrow-icon::before {
+  top: 50%;
+  -webkit-transform: translateX(-50%) rotate(-135deg);
+      -ms-transform: translateX(-50%) rotate(-135deg);
+          transform: translateX(-50%) rotate(-135deg);
+  -webkit-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+}
+
+.u-arrow-custom-v14::after,
+.u-arrow-custom-v14 .u-arrow-icon::after {
+  top: 50%;
+  -webkit-transform: translateX(-50%) rotate(-45deg);
+      -ms-transform: translateX(-50%) rotate(-45deg);
+          transform: translateX(-50%) rotate(-45deg);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.u-arrow-custom-v14 .u-arrow-icon::before, .u-arrow-custom-v14 .u-arrow-icon::after {
+  z-index: 2;
+  height: 0;
+  background: #fff;
+  -webkit-transition: height .3s, -webkit-transform .3s;
+  transition: height .3s, -webkit-transform .3s;
+  -o-transition: height .3s, transform .3s;
+  transition: height .3s, transform .3s;
+  transition: height .3s, transform .3s, -webkit-transform .3s;
+}
+
+.u-arrow-custom-v14 .u-arrow-title {
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  -webkit-transition: opacity .3s, -webkit-transform .3s;
+  transition: opacity .3s, -webkit-transform .3s;
+  -o-transition: transform .3s, opacity .3s;
+  transition: transform .3s, opacity .3s;
+  transition: transform .3s, opacity .3s, -webkit-transform .3s;
+  margin: 0;
+}
+
+.u-arrow-custom-v14.js-prev .u-arrow-title {
+  left: 100%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+      -ms-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
+.u-arrow-custom-v14.js-next::before,
+.u-arrow-custom-v14.js-next .u-arrow-icon::before {
+  -webkit-transform: translateX(-50%) rotate(135deg);
+      -ms-transform: translateX(-50%) rotate(135deg);
+          transform: translateX(-50%) rotate(135deg);
+  -webkit-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+}
+
+.u-arrow-custom-v14.js-next::after,
+.u-arrow-custom-v14.js-next .u-arrow-icon::after {
+  -webkit-transform: translateX(-50%) rotate(45deg);
+      -ms-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+  -webkit-transform-origin: 100% 0;
+      -ms-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+
+.u-arrow-custom-v14.js-next .u-arrow-title {
+  right: 100%;
+  text-align: right;
+  -webkit-transform: translateY(-50%) translateX(50%);
+      -ms-transform: translateY(-50%) translateX(50%);
+          transform: translateY(-50%) translateX(50%);
+}
+
+.u-arrow-custom-v14:hover::before,
+.u-arrow-custom-v14:hover .u-arrow-icon::before {
+  -webkit-transform: translateX(-50%) rotate(-125deg);
+      -ms-transform: translateX(-50%) rotate(-125deg);
+          transform: translateX(-50%) rotate(-125deg);
+}
+
+.u-arrow-custom-v14:hover::after,
+.u-arrow-custom-v14:hover .u-arrow-icon::after {
+  -webkit-transform: translateX(-50%) rotate(-55deg);
+      -ms-transform: translateX(-50%) rotate(-55deg);
+          transform: translateX(-50%) rotate(-55deg);
+}
+
+.u-arrow-custom-v14:hover .u-arrow-icon::before, .u-arrow-custom-v14:hover .u-arrow-icon::after {
+  height: 50%;
+}
+
+.u-arrow-custom-v14:hover .u-arrow-title {
+  opacity: 1;
+  -webkit-transform: translateY(-50%) translateX(0);
+      -ms-transform: translateY(-50%) translateX(0);
+          transform: translateY(-50%) translateX(0);
+}
+
+.u-arrow-custom-v14:hover.js-next::before,
+.u-arrow-custom-v14:hover.js-next .u-arrow-icon::before {
+  -webkit-transform: translateX(-50%) rotate(125deg);
+      -ms-transform: translateX(-50%) rotate(125deg);
+          transform: translateX(-50%) rotate(125deg);
+}
+
+.u-arrow-custom-v14:hover.js-next::after,
+.u-arrow-custom-v14:hover.js-next .u-arrow-icon::after {
+  -webkit-transform: translateX(-50%) rotate(55deg);
+      -ms-transform: translateX(-50%) rotate(55deg);
+          transform: translateX(-50%) rotate(55deg);
+}
+
+/*------------------------------------
+  Badges
+------------------------------------*/
+[class*="u-badge"] {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.92857rem;
+  color: #333;
+  z-index: 3;
+}
+
+[class*="u-badge"]:not([class*="--top-left"]):not([class*="--bottom-left"]):not([class*="--bottom-right"]) {
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.u-badge--top-left {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.u-badge--bottom-left {
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+.u-badge--bottom-right {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(50%, 50%);
+      -ms-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+/*------------------------------------
+  Badges v1
+------------------------------------*/
+[class*="u-badge-v1"] {
+  background-color: #ddd;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.u-badge-v1 {
+  min-width: 1.28571rem;
+  min-height: 1.28571rem;
+  line-height: 1.28571rem;
+  padding: 0.21429rem;
+}
+
+.u-badge-v1.g-brd-around {
+  line-height: 1.14286rem;
+}
+
+.u-badge-v1--xs {
+  min-width: 1rem;
+  min-height: 1rem;
+  line-height: 1rem;
+  font-size: 0.71429rem;
+  padding: 0.14286rem;
+}
+
+.u-badge-v1--xs.g-brd-around {
+  line-height: 0.85714rem;
+}
+
+.u-badge-v1--sm {
+  min-width: 1.14286rem;
+  min-height: 1.14286rem;
+  line-height: 1.14286rem;
+  font-size: 0.78571rem;
+  padding: 0.14286rem;
+}
+
+.u-badge-v1--sm.g-brd-around {
+  line-height: 1rem;
+}
+
+.u-badge-v1--md {
+  min-width: 1.28571rem;
+  min-height: 1.28571rem;
+  line-height: 1.28571rem;
+  font-size: 0.92857rem;
+  padding: 0.21429rem;
+}
+
+.u-badge-v1--md.g-brd-around {
+  line-height: 1.14286rem;
+}
+
+.u-badge-v1--lg {
+  min-width: 1.42857rem;
+  min-height: 1.42857rem;
+  line-height: 1.42857rem;
+  font-size: 1.07143rem;
+  padding: 0.21429rem;
+}
+
+.u-badge-v1--lg.g-brd-around {
+  line-height: 1.28571rem;
+}
+
+.u-badge-v1--xl {
+  min-width: 1.85714rem;
+  min-height: 1.85714rem;
+  line-height: 1.85714rem;
+  font-size: 1.21429rem;
+  padding: 0.21429rem;
+}
+
+.u-badge-v1--xl.g-brd-around {
+  line-height: 1.71429rem;
+}
+
+/*------------------------------------
+  Badges v2
+------------------------------------*/
+[class*="u-badge-v2"] {
+  background-color: #e62154;
+  border-radius: 50%;
+}
+
+.u-badge-v2 {
+  width: 14px;
+  height: 14px;
+}
+
+.u-badge-v2--xs {
+  width: 8px;
+  height: 8px;
+}
+
+.u-badge-v2--sm {
+  width: 12px;
+  height: 12px;
+}
+
+.u-badge-v2--md {
+  width: 14px;
+  height: 14px;
+}
+
+.u-badge-v2--lg {
+  width: 16px;
+  height: 16px;
+}
+
+.u-badge-v2--xl {
+  width: 18px;
+  height: 18px;
+}
+
+/*------------------------------------
+  Badges v3
+------------------------------------*/
+[class*="u-badge-v3"] {
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 1px 1px #333, 0 -1px 1px #333, 1px 0 1px #333, -1px 0 1px #333;
+}
+
+.u-badge-v3 {
+  font-size: 1rem;
+}
+
+.u-badge-v3--xs {
+  font-size: 0.71429rem;
+}
+
+.u-badge-v3--sm {
+  font-size: 0.85714rem;
+}
+
+.u-badge-v3--md {
+  font-size: 1rem;
+}
+
+.u-badge-v3--lg {
+  font-size: 1.14286rem;
+}
+
+.u-badge-v3--xl {
+  font-size: 1.14286rem;
+}
 
 hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
+/* Solid Divider */
+.u-divider-solid {
+  border-top-style: solid;
+}
+
+/* Dotted Divider */
+.u-divider-dotted {
+  border-top-style: dotted;
+}
+
+/* Dashed Divider */
+.u-divider-dashed {
+  border-top-style: dashed;
+}
+
+/* Double Solid Divider */
+.u-divider-db-solid {
+  height: 5px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+/* Double Dashed Divider */
+.u-divider-db-dashed {
+  height: 5px;
+  border-top: 1px dashed transparent;
+  border-bottom: 1px dashed transparent;
+}
+
+/* Double Dotted Divider */
+.u-divider-db-dotted {
+  height: 5px;
+  border-top: 1px dotted transparent;
+  border-bottom: 1px dotted transparent;
+}
+
+/* Linear Gradient Divider */
+.u-divider-linear-gradient {
+  height: 1px;
+  border: none;
+}
+
+.u-divider-linear-gradient--gray-light-v2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#ccc), to(transparent));
+  background-image: -webkit-linear-gradient(left, transparent, #ccc, transparent);
+  background-image: -o-linear-gradient(left, transparent, #ccc, transparent);
+  background-image: linear-gradient(to right, transparent, #ccc, transparent);
+}
+
+.u-divider-linear-gradient--gray-light-v3 {
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#ddd), to(transparent));
+  background-image: -webkit-linear-gradient(left, transparent, #ddd, transparent);
+  background-image: -o-linear-gradient(left, transparent, #ddd, transparent);
+  background-image: linear-gradient(to right, transparent, #ddd, transparent);
+}
+
+.u-divider {
+  position: relative;
+  border-top-width: 1px;
+}
+
+.u-divider__icon {
+  position: absolute;
+  top: -1.42857rem;
+  width: 2.85714rem;
+  height: 2.85714rem;
+  font-size: 1.28571rem;
+  line-height: 2.85714rem;
+  text-align: center;
+  font-style: normal;
+}
+
+.u-divider__icon--indented {
+  -webkit-box-shadow: 0 0 0 15px #fff;
+          box-shadow: 0 0 0 15px #fff;
+}
+
+.u-divider-center {
+  text-align: center;
+}
+
+.u-divider-right {
+  text-align: right;
+}
+
+.u-divider-center .u-divider__icon {
+  left: auto;
+  right: auto;
+  margin-left: -1.42857rem;
+}
+
+.u-divider-right .u-divider__icon {
+  left: auto;
+  right: 0;
+}
+
+/*------------------------------------
+  Go To v1
+------------------------------------*/
+[class*="u-go-to"] {
+  display: none;
+}
+
+.u-go-to-v1 {
+  width: 3.57143rem;
+  height: 3.57143rem;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #333;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out;
+  z-index: 11;
+}
+
+.u-go-to-v1 i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.u-go-to-v1:hover, .u-go-to-v1:focus:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #e62154;
+}
+
+.u-go-to-v1:focus {
+  text-decoration: none;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 576px - 1) {
+  .u-go-to-v1 {
+    -webkit-transform: scale(0.8, 0.8);
+        -ms-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+}
+
+/*------------------------------------
+  Go To v2
+------------------------------------*/
+[class*="u-go-to"] {
+  display: none;
+}
+
+.u-go-to-v2 {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border-radius: 3px;
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out;
+  z-index: 11;
+}
+
+.u-go-to-v2 i {
+  width: 2.85714rem;
+  height: 2.85714rem;
+  display: block;
+  text-align: center;
+  line-height: 2.85714rem;
+}
+
+.u-go-to-v2:hover, .u-go-to-v2:focus:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #e62154;
+}
+
+.u-go-to-v2:focus {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 576px - 1) {
+  .u-go-to-v2 {
+    -webkit-transform: scale(0.8, 0.8);
+        -ms-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+}
+
+/*------------------------------------
+  Go To v3
+------------------------------------*/
+[class*="u-go-to"] {
+  display: none;
+}
+
+.u-go-to-v3 {
+  padding: 5px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #333;
+  border-radius: 50%;
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out;
+  z-index: 11;
+}
+
+.u-go-to-v3 i {
+  width: 3.57143rem;
+  height: 3.57143rem;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.14286rem;
+  line-height: 3.28571rem;
+  border: solid 1px #333;
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+.u-go-to-v3:hover, .u-go-to-v3:focus:hover {
+  text-decoration: none;
+  color: #e62154;
+  background-color: white;
+}
+
+.u-go-to-v3:hover i, .u-go-to-v3:focus:hover i {
+  border-color: #e62154;
+}
+
+.u-go-to-v3:focus {
+  text-decoration: none;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.u-go-to-v3:focus i {
+  border-color: #333;
+}
+
+@media (max-width: 576px - 1) {
+  .u-go-to-v3 {
+    -webkit-transform: scale(0.8, 0.8);
+        -ms-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+}
+
+/*------------------------------------
+  Go To v4
+------------------------------------*/
+.u-go-to-v4 {
+  position: relative;
+  width: 22px;
+  height: 35px;
+  border: 2px solid #e62154;
+  border-radius: 15px;
+}
+
+.u-go-to-v4::before {
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  border-radius: 50%;
+  content: " ";
+  position: absolute !important;
+  left: 50% !important;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-backface-visibility: hidden;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: u-go-to-v4;
+          animation-name: u-go-to-v4;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes u-go-to-v4 {
+  0% {
+    top: 20%;
+    bottom: 0;
+  }
+  50% {
+    top: 50%;
+    bottom: 0;
+  }
+  100% {
+    top: 20%;
+    bottom: 100%;
+  }
+}
+
+@keyframes u-go-to-v4 {
+  0% {
+    top: 20%;
+    bottom: 0;
+  }
+  50% {
+    top: 50%;
+    bottom: 0;
+  }
+  100% {
+    top: 20%;
+    bottom: 100%;
+  }
+}
 
 /*------------------------------------
   Headers
