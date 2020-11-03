@@ -39,6 +39,7 @@ CSS
 
         $view->registerJs(<<<JS
 $(document).on('pjax:complete', function (e) {
+    console.log("pjax:complete");
     $.HSCore.components.HSCarousel.init('.js-carousel');
 });
 $.HSCore.components.HSCarousel.init('.js-carousel');
