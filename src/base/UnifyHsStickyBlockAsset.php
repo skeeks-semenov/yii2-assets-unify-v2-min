@@ -14,7 +14,7 @@ namespace skeeks\assets\unify\base;
 class UnifyHsStickyBlockAsset extends UnifyAsset
 {
     public $css = [
-        'assets/vendor/hamburgers/hamburgers.min.css'
+        //'assets/vendor/hamburgers/hamburgers.min.css'
     ];
 
     public $js = [
