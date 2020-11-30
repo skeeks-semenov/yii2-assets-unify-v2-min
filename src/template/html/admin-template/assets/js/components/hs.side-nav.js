@@ -7,7 +7,7 @@
  *
  */
 
-var isSideMenuMini = $.cookie('isSideMenuMini') ? true : '',
+var isSideMenuMini = '',
     shouldOpenSidebarOnHover = false;
 
 ;
@@ -96,12 +96,12 @@ var isSideMenuMini = $.cookie('isSideMenuMini') ? true : '',
 
             if (!$(target).hasClass('toggled')) {
               $self.defaultOpenEffect(target, $closedItems, targetClass, bodyClass, config.afterOpen);
-              $.cookie('isSideMenuMini', true);
+              //$.cookie('isSideMenuMini', true);
 
               shouldOpenSidebarOnHover = true;
             } else {
               $self.defaultCloseEffect(target, $closedItems, targetClass, bodyClass, config.afterClose);
-              $.cookie('isSideMenuMini', '');
+              //$.cookie('isSideMenuMini', '');
 
               shouldOpenSidebarOnHover = false;
             }

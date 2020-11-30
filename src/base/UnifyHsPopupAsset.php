@@ -24,8 +24,8 @@ class UnifyHsPopupAsset extends UnifyAsset
 
     public $depends = [
         UnifyHsCoreAsset::class,
-        UnifyFancyboxAsset::class,
-        //FancyboxAssets::class,
+        //UnifyFancyboxAsset::class,
+        FancyboxAssets::class,
     ];
 
     public function registerAssetFiles($view)
