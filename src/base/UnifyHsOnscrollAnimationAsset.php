@@ -31,6 +31,11 @@ class UnifyHsOnscrollAnimationAsset extends UnifyAsset
     {
         parent::registerAssetFiles($view);
 
+        $view->registerJs(<<<JS
+$.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+JS
+    );
+        
         $view->registerCss(<<<CSS
 
 /*------------------------------------
