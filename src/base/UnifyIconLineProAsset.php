@@ -59,6 +59,15 @@ class UnifyIconLineProAsset extends UnifyAsset
             'crossorigin' => 'crossorigin',
         ]);
 
+        $href = self::getAssetUrl('assets/vendor/icon-line-pro/real-estate/webfont/fonts/real-estate.woff');
+        \Yii::$app->view->registerLinkTag([
+            'rel'         => 'preload',
+            'href'        => $href,
+            'as'          => 'font',
+            'type'        => 'font/woff2',
+            'crossorigin' => 'crossorigin',
+        ]);
+
 
         \Yii::$app->assetManager->appendTimestamp = $appendTimestamp;
     }

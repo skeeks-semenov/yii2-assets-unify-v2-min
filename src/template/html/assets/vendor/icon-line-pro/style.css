@@ -10,6 +10,7 @@
 	url("christmas/webfont/fonts/cristmas.svg#cristmas") format("svg");
 	font-weight: normal;
 	font-style: normal;
+    font-display: swap;
 }
 
 [data-icon-christmas]:before {
@@ -350,6 +351,7 @@
 	url("clothes/webfont/fonts/clothes.svg#clothes") format("svg");
 	font-weight: normal;
 	font-style: normal;
+    font-display: swap;
 }
 
 [data-icon-clothes]:before {
@@ -1909,6 +1911,7 @@
 	url("electronics/webfont/fonts/electronics.svg#electronics") format("svg");
 	font-weight: normal;
 	font-style: normal;
+    font-display: swap;
 }
 
 [data-icon-electronics]:before {
@@ -3249,6 +3252,7 @@
 	url("food/webfont/fonts/food-48.svg#food-48") format("svg");
 	font-weight: normal;
 	font-style: normal;
+    font-display: swap;
 }
 
 [data-icon-food]:before {
@@ -4187,6 +4191,7 @@
     url("furniture/webfont/fonts/furniture.ttf") format("truetype"),
 	url("furniture/webfont/fonts/furniture.svg#furniture") format("svg");
 	font-weight: normal;
+    font-display: swap;
 	font-style: normal;
 }
 
@@ -4529,6 +4534,7 @@
 	url("hotel-restaurant/webfont/fonts/hotel-restaurant.svg#hotel-restaurant") format("svg");
 	font-weight: normal;
 	font-style: normal;
+    font-display: swap;
 }
 
 [data-icon-hotel-restaurant]:before {
@@ -5749,6 +5755,7 @@
 	url("medical/webfont/fonts/medical-and-health.svg#medical-and-health") format("svg");
 	font-weight: normal;
 	font-style: normal;
+    font-display: swap;
 }
 
 [data-icon-medical]:before {
@@ -6088,6 +6095,7 @@
 	url("music/webfont/fonts/music.svg#music") format("svg");
 	font-weight: normal;
 	font-style: normal;
+    font-display: swap;
 }
 
 [data-icon-music]:before {
@@ -6427,6 +6435,7 @@
 	url("real-estate/webfont/fonts/real-estate.svg#real-estate") format("svg");
 	font-weight: normal;
 	font-style: normal;
+    font-display: swap;
 }
 
 [data-icon-real-estate]:before {
@@ -6736,6 +6745,7 @@
 	url("science/webfont/fonts/science.svg#science") format("svg");
 	font-weight: normal;
 	font-style: normal;
+    font-display: swap;
 }
 
 [data-icon-science]:before {
@@ -7255,6 +7265,7 @@
 	url("sports/webfont/fonts/sports-48-x-48.svg#sports-48-x-48") format("svg");
 	font-weight: normal;
 	font-style: normal;
+    font-display: swap;
 }
 
 [data-icon-sport]:before {
@@ -7907,6 +7918,7 @@
 	url("travel/webfont/fonts/travel.svg#travel") format("svg");
 	font-weight: normal;
 	font-style: normal;
+    font-display: swap;
 }
 
 [data-icon-travel]:before {
@@ -8396,6 +8408,7 @@
 	url("weather/webfont/fonts/weather.svg#weather") format("svg");
 	font-weight: normal;
 	font-style: normal;
+    font-display: swap;
 }
 
 [data-icon-weather]:before {
@@ -8615,6 +8628,7 @@
 	url("transport/webfont/fonts/transport.svg#transport") format("svg");
 	font-weight: normal;
 	font-style: normal;
+    font-display: swap;
 }
 
 [data-icon-transport]:before {
