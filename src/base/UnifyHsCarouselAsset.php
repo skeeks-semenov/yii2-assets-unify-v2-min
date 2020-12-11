@@ -37,13 +37,30 @@ class UnifyHsCarouselAsset extends UnifyAsset
 CSS
         );
 
-        $view->registerJs(<<<JS
+        if (!\Yii::$app->request->isPjax && !\Yii::$app->request->isAjax) {
+            $view->registerJs(<<<JS
 $(document).on('pjax:complete', function (e) {
-    console.log("pjax:complete");
+    setTimeout(function() {
+        $(window).resize();
+    }, 300);
+    
     $.HSCore.components.HSCarousel.init('.js-carousel');
+    
 });
-$.HSCore.components.HSCarousel.init('.js-carousel');
+
 JS
-        );
+            );
+
+            $view->registerJs(<<<JS
+        $.HSCore.components.HSCarousel.init('.js-carousel');
+        /*setTimeout(function() {
+            $('.js-carousel').slick('refresh');
+        }, 300);*/
+JS
+            );
+
+        }
+
+
     }
 }
