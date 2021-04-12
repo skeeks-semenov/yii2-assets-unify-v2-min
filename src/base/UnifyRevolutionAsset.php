@@ -40,11 +40,15 @@ class UnifyRevolutionAsset extends UnifyAsset
 
         $href = self::getAssetUrl('assets/vendor/revolution-slider/revolution/fonts/revicons/revicons.woff?5510888');
         \Yii::$app->view->registerLinkTag([
-            'rel' => 'preload', 'href' => $href, 'as' => 'font', 'type' => 'font/woff', 'crossorigin' => 'crossorigin'
+            'rel' => 'preload', 'href' => $href, 'as' => 'font', 'type' => 'font/woff',
+            "crossorigin" => "anonymous"
+            //'crossorigin' => 'crossorigin'
         ]);
         $href = self::getAssetUrl('assets/vendor/revolution-slider/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.woff?d7yf1v');
         \Yii::$app->view->registerLinkTag([
-            'rel' => 'preload', 'href' => $href, 'as' => 'font', 'type' => 'font/woff', 'crossorigin' => 'crossorigin'
+            'rel' => 'preload', 'href' => $href, 'as' => 'font', 'type' => 'font/woff',
+            "crossorigin" => "anonymous"
+            //'crossorigin' => 'crossorigin'
         ]);
 
         \Yii::$app->assetManager->appendTimestamp = $appendTimestamp;

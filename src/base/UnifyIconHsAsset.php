@@ -39,7 +39,8 @@ class UnifyIconHsAsset extends UnifyAsset
             'href'        => $href,
             'as'          => 'font',
             'type'        => 'font/ttf',
-            'crossorigin' => 'crossorigin',
+            //'crossorigin' => 'crossorigin',
+            "crossorigin" => "anonymous"
         ]);
 
         \Yii::$app->assetManager->appendTimestamp = $appendTimestamp;

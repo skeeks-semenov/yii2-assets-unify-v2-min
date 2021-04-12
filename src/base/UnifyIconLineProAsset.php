@@ -38,7 +38,8 @@ class UnifyIconLineProAsset extends UnifyAsset
             'href'        => $href,
             'as'          => 'font',
             'type'        => 'font/woff2',
-            'crossorigin' => 'crossorigin',
+            //'crossorigin' => 'crossorigin',
+            "crossorigin" => "anonymous"
         ]);
 
         $href = self::getAssetUrl('assets/vendor/icon-line-pro/education/webfont/fonts/education-48.woff');
@@ -47,7 +48,8 @@ class UnifyIconLineProAsset extends UnifyAsset
             'href'        => $href,
             'as'          => 'font',
             'type'        => 'font/woff2',
-            'crossorigin' => 'crossorigin',
+            //'crossorigin' => 'crossorigin',
+            "crossorigin" => "anonymous"
         ]);
         
         $href = self::getAssetUrl('assets/vendor/icon-line-pro/transport/webfont/fonts/transport.woff');
@@ -56,7 +58,8 @@ class UnifyIconLineProAsset extends UnifyAsset
             'href'        => $href,
             'as'          => 'font',
             'type'        => 'font/woff2',
-            'crossorigin' => 'crossorigin',
+            //'crossorigin' => 'crossorigin',
+            "crossorigin" => "anonymous"
         ]);
 
         $href = self::getAssetUrl('assets/vendor/icon-line-pro/real-estate/webfont/fonts/real-estate.woff');
@@ -65,7 +68,8 @@ class UnifyIconLineProAsset extends UnifyAsset
             'href'        => $href,
             'as'          => 'font',
             'type'        => 'font/woff2',
-            'crossorigin' => 'crossorigin',
+            //'crossorigin' => 'crossorigin',
+            "crossorigin" => "anonymous"
         ]);
 
 

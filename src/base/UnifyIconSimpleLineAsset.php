@@ -38,7 +38,8 @@ class UnifyIconSimpleLineAsset extends UnifyAsset
             'href'        => $href,
             'as'          => 'font',
             'type'        => 'font/woff2',
-            'crossorigin' => 'crossorigin',
+            "crossorigin" => "anonymous"
+            //'crossorigin' => 'crossorigin',
         ]);
       
 
