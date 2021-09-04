@@ -90,6 +90,11 @@
           $stickyBlock.removeClass('die-sticky');
         }
 
+        $stickyBlock.on("update", function() {
+                /*startPoint = $.isNumeric($stickyBlock.data('start-point')) ? $stickyBlock.data('start-point') : $($stickyBlock.data('start-point')).offset().top;*/
+              endPoint = $.isNumeric($stickyBlock.data('end-point')) ? $stickyBlock.data('end-point') : $($stickyBlock.data('end-point')).offset().top;
+        });
+
         $(window).on('resize', function () {
           var windW = $(window).width();
 

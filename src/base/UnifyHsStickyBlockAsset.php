@@ -30,16 +30,19 @@ class UnifyHsStickyBlockAsset extends UnifyAsset
         parent::registerAssetFiles($view);
 
         $view->registerJs(<<<JS
-$(window).on('load', function () {
-    // initialization of sticky blocks
-setTimeout(function() { // important in this case
-  $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
-}, 1);
-
+$(document).on('ajaxComplete', function() {
+  setTimeout(function() {
+      $('.js-sticky-block').trigger("update");
+  }, 200);
+});
 $(document).on('pjax:complete', function() {
   $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
-})
+});
 
+$(window).on('load', function () {
+    setTimeout(function() { // important in this case
+      $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
+    }, 1);
 });
 JS
         );
