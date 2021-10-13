@@ -44,7 +44,7 @@ $(document).on('pjax:complete', function (e) {
         $(window).resize();
     }, 300);
     
-    $.HSCore.components.HSCarousel.init('.js-carousel');
+    $.HSCore.components.HSCarousel.init($('.js-carousel', e.target));
     
 });
 
