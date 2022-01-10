@@ -124,7 +124,10 @@ var isSideMenuMini = '',
         }
 
         $(target).find('[data-hssm-target]').on('click', function(e) {
-          e.preventDefault();
+            if (!($this).hasAttribute("href")) {
+                e.preventDefault();
+            }
+          
 
           var itemTarget = $(this).data('hssm-target'),
             $itemParent = $(this).parent();
