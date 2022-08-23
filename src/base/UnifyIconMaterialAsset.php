@@ -24,4 +24,25 @@ class UnifyIconMaterialAsset extends UnifyAsset
 
     public $depends = [
     ];
+
+    public function registerAssetFiles($view)
+    {
+        parent::registerAssetFiles($view);
+
+        $appendTimestamp = \Yii::$app->assetManager->appendTimestamp;
+        \Yii::$app->assetManager->appendTimestamp = false;
+
+        $href = self::getAssetUrl('assets/vendor/icon-material/MaterialIcons-Regular.woff2');
+        \Yii::$app->view->registerLinkTag([
+            'rel'         => 'preload',
+            'href'        => $href,
+            'as'          => 'font',
+            'type'        => 'font/woff2',
+            "crossorigin" => "anonymous"
+            //'crossorigin' => 'crossorigin',
+        ]);
+
+
+        \Yii::$app->assetManager->appendTimestamp = $appendTimestamp;
+    }
 }
