@@ -17,11 +17,11 @@ use yii\web\YiiAsset;
 class UnifyFancyboxAsset extends UnifyAsset
 {
     public $css = [
-        'assets/vendor/fancybox/jquery.fancybox.min.css',
+        'assets/vendor/fancybox/jquery.fancybox.3.5.7.min.css',
     ];
 
     public $js = [
-        'assets/vendor/fancybox/jquery.fancybox.min.js',
+        'assets/vendor/fancybox/jquery.fancybox.3.5.7.min.js',
     ];
 
     public $depends = [
