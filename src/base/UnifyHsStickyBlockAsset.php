@@ -34,6 +34,9 @@ $(document).on('ajaxComplete', function() {
   setTimeout(function() {
       $('.js-sticky-block').trigger("update");
   }, 200);
+  setTimeout(function() {
+      $('.js-sticky-block').trigger("update");
+  }, 1000);
 });
 $(document).on('pjax:complete', function() {
   $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
